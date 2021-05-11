@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            width: 150px;
+            margin: 300px auto;
+            position: relative;
+            transform-origin: right bottom;
+            animation: aaa 2s infinite linear;
+        }
+
+        li {
+            width: 150px;
+            height: 300px;
+            list-style: none;
+            border-radius: 50% 0 0 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: top center;
+        }
+
+        li:nth-child(1) {
+            border-left: 150px solid #07ca07;
+            transform: rotate(90deg);
+        }
+
+        li:nth-child(2) {
+            border-left: 150px solid #04e0b1;
+            transform: rotate(180deg);
+        }
+
+        li:nth-child(3) {
+            border-left: 150px solid #04c5d6;
+            transform: rotate(270deg);
+        }
+
+        li:nth-child(4) {
+            border-left: 150px solid #922c12;
+            transform: rotate(360deg);
+        }
+
+        @keyframes aaa {
+            100% {
+                transform: rotate(720deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>
