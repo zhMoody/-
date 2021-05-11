@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+
+        .jd {
+            position: relative;
+            width: 600px;
+            height: 150px;
+            background-color: #fff;
+            text-align: center;
+            line-height: 150px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .box {
+            position: absolute;
+            top: 0;
+            right: 250px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 75px 40px;
+            border-color: transparent #fff #fff transparent;
+        }
+
+        .miao {
+
+            float: left;
+            width: 350px;
+            height: 100%;
+            font-size: 4em;
+            background-color: rgb(255, 157, 0);
+        }
+
+        .la {
+            font-size: 4em;
+            color: #ccc;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jd">
+        <span class="miao">¥1650</span>
+        <div class="box"></div>
+        <span class="la">¥1999</span>
+    </div>
+
+</body>
+
+</html>

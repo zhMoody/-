@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            text-align: center;
+            margin: 200px auto;
+        }
+
+        .box a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            font-size: 14px;
+            color: rgb(4, 18, 19);
+            background-color: #f7f7f7;
+            border: 1px solid rgba(231, 225, 225, 0.8);
+            line-height: 36px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .box a:nth-child(9),
+        .box a:nth-child(1) {
+            width: 85px;
+        }
+
+        .box a:nth-child(3),
+        .box a:nth-child(8) {
+            background-color: #fff;
+            border: 0;
+        }
+
+        input,
+        button {
+            outline: 0;
+            width: 38px;
+            height: 36px;
+            border: 1px solid rgba(231, 225, 225, 0.8);
+        }
+
+        button {
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <a href="#">&lt;&lt;上一页</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">...</a>
+        <a href="#">下一页&gt;&gt;</a>
+        跳到
+        <input type="text">
+        页
+        <button>确定</button>
+    </div>
+</body>
+
+</html>

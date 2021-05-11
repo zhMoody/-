@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            /* 顶线对齐 */
+            /* vertical-align: top; */
+
+            /* 底线对齐 */
+            /* vertical-align: bottom; */
+
+            /* 中线对齐 */
+            vertical-align: middle;
+
+            /* 默认基线对齐 */
+            /* vertical-align: baseline; */
+        }
+
+        textarea,
+        button,
+        span {
+            width: 500px;
+            height: 300px;
+            font-size: 3em;
+            border-radius: 30px;
+            background-color: rgb(91, 163, 8);
+            stroke: none;
+        }
+
+        button {
+            height: 200px;
+        }
+
+        div {
+            /* 去除缝隙 */
+            /* font-size: 0; */
+            border: 2px solid red;
+        }
+
+        img {
+            /* 去除缝隙 */
+            /* 第一种 */
+            /* vertical-align: bottom; */
+            vertical-align: middle;
+            /* 第二种 转换成块级元素*/
+            /* display: block; */
+        }
+    </style>
+</head>
+
+<body>
+    <div><img src="./images/ldh.jpg" alt="">什么是快乐星球??</div>
+
+
+
+    <textarea name="" id="" cols="30" rows="10">什么是快乐星球??</textarea><button
+        onclick="sayHello()">行内块</button><span>嘿嘿</span>
+    <script>
+        function sayHello() {
+            alert('hello world')
+        }
+    </script>
+</body>
+
+</html>

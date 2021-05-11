@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 浮动不会压住文字.行内块元素.图片 */
+            /* float: left; */
+            /* 绝对定位 固定定位会压住下面的所有元素 六亲不认 */
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(109, 172, 51);
+
+        }
+
+        .box ul li {
+            display: inline-block;
+            width: 20px;
+            height: 100px;
+            background-color: rgb(206, 21, 21);
+            animation: aaa 2s infinite linear;
+        }
+
+        @keyframes aaa {}
+
+        p {
+
+            height: 200px;
+            background-color: rgb(175, 98, 98);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <p>阁下何不成凤兮,扶摇直上九千里</p>
+</body>
+
+</html>

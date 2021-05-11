@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    height: 42px;
+    background-color: pink;
+    margin: 30px auto;
+}
+
+.header>div {
+    float: left;
+}
+
+.header>.user {
+    float: right;
+}

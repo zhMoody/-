@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.fl-l {
+	float: left;
+}
+
+.fl-r {
+	float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: '';
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+.nav,
+.container {
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-left: 20px;
+}
+
+.container {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.container > div {
+	width: 48%;
+	height: 560px;
+	position: relative;
+}
+
+h1 {
+	font-weight: normal;
+	font-family: 'Microsoft yahei';
+	color: #fff;
+	padding: 10px;
+	font-size: 18px;
+	background-color: #de254f;
+}
+
+th {
+	background-color: #428cdb;
+	height: 40px;
+	color: #fff;
+	font-weight: lighter;
+	font-size: 15px;
+	font-family: "Arial";
+	text-transform: uppercase;
+	line-height: 40px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+td {
+	height: 40px;
+	color: #333;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+td:first-child {
+	font-weight: bold;
+	color: #de254f;
+	font-size: 18px;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+}
+
+tr:nth-of-type(odd) {
+	background-color: #f8f8f8;
+}
+
+tr:hover {
+	background-color: #ccc;
+}
+
+h3 {
+	height: 30px;
+	line-height: 30px;
+	color: #333;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.btn {
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+}
+
+.btn ul li {
+	float: left;
+	margin-left: 10px;
+	line-height: 30px;
+	text-align: center;
+	height: 30px;
+}
+
+.btn ul li.cur {
+	color: #428cdb;
+}
+
+.btn ul li.gray a {
+	color: #e4e4e4;
+}
+.btn ul li.gray a:hover {
+	background-color: #f8f8f8;
+}
+
+.btn a {
+	display: block;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 4px;
+	background-color: #f4f4f4;
+	text-decoration: none;
+	color: #666;
+	font-family: simsun;
+	font-weight: 700;
+}
+
+.btn a:hover {
+	background-color: #428cdb;
+	color: #fff;
+}

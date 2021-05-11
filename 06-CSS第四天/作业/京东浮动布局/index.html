@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #e0e0e0;
+        }
+
+        .box {
+            width: 1150px;
+            height: 390px;
+            /* background-color: #ccc; */
+            margin: 200px auto;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box .f1,
+        .box .f3 {
+            float: left;
+            width: 350px;
+            height: 390px;
+
+            /* background-color: skyblue; */
+        }
+
+        .box .f3 {
+            margin-left: 50px;
+        }
+
+        .f1 ul li,
+        .f3 ul li {
+            float: left;
+            width: 170px;
+            height: 190px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: all .5s;
+            /* background-color: pink; */
+        }
+
+        .f1 ul .aa,
+        .f3 ul .aa {
+            margin-right: 0;
+        }
+
+        .box .f2 {
+            float: left;
+            width: 350px;
+            height: 390px;
+            /* background-color: yellow; */
+            margin-left: 50px;
+            transition: all .5s;
+        }
+
+        .f1 ul li:hover,
+        .f3 ul li:hover,
+        .box .f2:hover {
+            box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="f1">
+            <ul>
+                <li><a href="#"><img src="./京东图片素材/left01.png" alt=""></a></li>
+                <li class="aa"><a href=""><img src="./京东图片素材/left02.png" alt=""></a></li>
+                <li><a href="#"><img src="./京东图片素材/left03.png" alt=""></a></li>
+                <li class="aa"><a href="#"><img src="./京东图片素材/left04.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="f2"><a href="#"><img src="./京东图片素材/center.png" alt=""></a></div>
+        <div class="f3">
+            <ul>
+                <li><a href="#"><img src="./京东图片素材/right01.png" alt=""></a></li>
+                <li class="aa"><a href="#"><img src="./京东图片素材/right02.png" alt=""></a></li>
+                <li><a href="#"><img src="./京东图片素材/right03.png" alt=""></a></li>
+                <li class="aa"><a href="#"><img src="./京东图片素材/right04.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

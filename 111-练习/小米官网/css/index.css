@@ -1,0 +1,262 @@
+.shortcut {
+    height: 40px;
+    background-color: #333;
+    line-height: 40px;
+}
+.short li{
+   float: left;
+   margin-right: 10px;
+
+}
+.short li a {
+    color: #ccc;
+}
+.short li:nth-child(2n) {
+    margin-top: 16px;
+    width: 1px;
+    height: 10px;
+    background-color: #666;
+}
+header {
+    height: 100px;
+    padding-top: 22px;
+}
+header .hone {
+    width: 55px;
+    height: 55px;
+    background-image: url(../images/logo.png);
+    margin-right: 10px;
+
+}
+header .htwo {
+    width: 163px;
+    height: 66px;
+    background-image: url(../images/new.gif);
+}
+header .hthree {
+    margin-left: 20px;
+}
+header .hthree li{
+    float: left;
+    height: 65px;
+    line-height: 65px;
+    margin-right: 25px;
+}
+
+.banner {
+    height: 460px;
+    /* background-color: blue; */
+}
+.banner .banl {
+    width: 235px;
+    height: 460px;
+    background-color: pink;
+    padding-top: 27px;
+    text-indent: 30px;
+    background-color: #2c505f;
+}
+.banner .banl li {
+    /* float: left; */
+    height: 42px;
+    line-height: 42px;
+    position: relative;
+}
+.banner .banl span {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 10px;
+    background: url(../images/right.png);
+}
+.banner  li a {
+    color: #fff;
+}
+.banner .banr {
+        width: 993px;
+        height: 460px;
+        background: url(../images/banner.png);
+}
+.im {
+    height: 170px;
+    margin-top: 14px;
+    margin-bottom: 67px;
+
+}
+.im .im1 {
+    width: 234px;
+    height: 170px;
+    background-color: #5f5750;
+    text-align: center;
+    padding-top: 50px;
+}
+.im .im1 p{
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+.im .im2 {
+    width: 316px;
+    height: 170px;
+    background: url(../images/pro1.png);
+    margin-left: 15px;
+}
+.im .im3 {
+    width: 316px;
+    height: 170px;
+    background: url(../images/pro2.png);
+    margin-left: 15px;
+}
+.im .im4 {
+    width: 316px;
+    height: 170px;
+    background: url(../images/pro3.png);
+    margin-left: 15px;
+}
+.clear {
+    height: 800px;
+    background-color: #f5f5f5;
+    padding-top: 65px;
+}
+.clear .clco {
+    height: 54px;
+}
+.clear .clco .cor {
+    font-size: 14px;
+}
+.clear .clim {
+    height: 618px;
+}
+.clear .clim .climl {
+    width: 234px;
+    height: 618px;
+    background: url(../images/girl.jpg);
+}
+.clear .clim .climr {
+    width: 976px;
+    height: 618px;
+    overflow: hidden;
+}
+.clear .clim .clim1 {
+    width: 232px;
+    height: 302px;
+    text-align: center;
+    margin-right: 15px;;
+    margin-bottom: 15px;
+    background-color: #fff;
+    position: relative;
+   
+}
+.clear .clim .mian {
+    width: 64px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #ffac13;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color:#fff;
+    font-size: 12px;
+
+}
+.clear .clim .xiang {
+    width: 64px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #e53935;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color:#fff;
+    font-size: 12px;
+
+}
+
+.clear .clim1 img {
+    margin-top: 30px;
+    /* margin-left: 30px; */
+    width: 160px;
+    height: 160px;
+
+}
+.clear .clim1 p {
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.clear .clim1 p:nth-child(2) {
+    color: #b0b0b0;
+}
+.clear .clim1 p:nth-child(4) {
+    color: #ff6700;
+}
+.mr {
+    margin-right: 0 !important;
+}
+.help {
+    height: 210px;
+    padding-top: 54px;
+}
+.help dt {
+    height: 28px;
+    line-height: 28px;
+}
+.help dd {
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #757575;
+}
+.help  dl {
+    margin-right: 95px;
+}
+.help .line {
+    width: 1px;
+    height: 50%;
+    background-color: #ccc;
+}
+.helpr {
+    width: 252px;
+    height: 210px;
+    /* background-color: pink; */
+}
+.helpr .cont {
+    text-align: center;
+    margin-right: 30px;
+}
+.helpr .cont p {
+    font-size: 12px;
+    color:#616161;
+}
+.helpr .cont .one {
+    color:#ff6c23;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+footer {
+    height: 158px;
+    background-color: #fafafa;
+}
+footer .foo {
+    padding-top: 30px;
+}
+footer img {
+    vertical-align: top;
+    margin-right: 20px;
+}
+footer  .sp{
+    font-size: 14px;
+    color: #000;
+}
+footer  span {
+    font-size: 12px;
+    color: #b0b0c3;
+}
+footer .bot {
+    margin-top: 30px;
+    text-align: center;
+}

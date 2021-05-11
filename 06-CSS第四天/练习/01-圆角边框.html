@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yuan {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin: 200px auto;
+            transition: all 1s;
+            background: rgb(177, 8, 8) url(../../03-CSS第一天/作业/百度首页/bdlogo.gif) no-repeat center;
+        }
+
+        .yuan:hover {
+            transform: rotate(720deg);
+            width: 350px;
+            height: 350px;
+            background: rgb(177, 8, 8) url(../../03-CSS第一天/作业/百度首页/bdlogo.gif) no-repeat center;
+            ;
+        }
+
+        .juxing {
+            width: 300px;
+            height: 150px;
+            background-color: rgb(30, 145, 74);
+            border-radius: 75px;
+            margin: 0px auto;
+            transition: all .5s;
+        }
+
+        .juxing:hover {
+            box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .5);
+        }
+
+        .gezhong {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(39, 160, 23);
+            border-radius: 20px 150px 20px 150px;
+            margin: 200px auto;
+            transition: all 1s;
+        }
+
+        .gezhong:hover {
+            border-radius: 20px 20px 20px 20px;
+            box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .5);
+        }
+
+        .yezi {
+
+            width: 806px;
+            height: 800px;
+            /* background-color: rgb(199, 103, 103); */
+            margin: 200px auto;
+            transition: all 10s;
+        }
+
+        .yezi .one {
+            float: left;
+            height: 400px;
+            width: 400px;
+            border-radius: 10px 300px 10px 300px;
+            background-color: rgb(185, 127, 127);
+            box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .5);
+        }
+
+        .yezi .two {
+            float: left;
+            height: 400px;
+            width: 400px;
+            border-radius: 300px 10px 300px 10px;
+            background-color: rgb(184, 128, 128);
+            box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .5);
+        }
+
+        .yezi:hover {
+            transform: rotate(1440deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yuan"></div>
+    <div class="juxing"></div>
+    <div class="gezhong"></div>
+
+    <div class="yezi">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="one"></div>
+    </div>
+</body>
+
+</html>

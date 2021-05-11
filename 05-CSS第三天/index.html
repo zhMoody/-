@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    div {
+        background-color: rgb(255, 72, 0);
+        width: 90px;
+        height: 20px;
+        padding: 40px;
+        margin: 100px auto;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 20px;
+    }
+</style>
+
+<body>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)">
+        点击隐藏</div>
+
+    <script>
+        function mDown(obj) {
+            obj.style.backgroundColor = "#1ec5e5";
+            // obj.innerHTML = "松开鼠标";
+
+        }
+
+        function mUp(obj) {
+            obj.style.backgroundColor = "#D94A38";
+            obj.innerHTML = "隐藏成功";
+        }
+    </script>
+
+</html>

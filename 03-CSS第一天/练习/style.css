@@ -1,0 +1,9 @@
+.waibu {
+  width: 400px;
+  height: 400px;
+  color: orange;
+  font: 700 50px/400px "微软雅黑";
+  text-align: center;
+  background-color: #ccc;
+  margin: 0 auto;
+}

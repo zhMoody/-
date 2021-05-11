@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input::placeholder {
+            color: rgb(8, 116, 116);
+        }
+
+        input {
+            width: 500px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <p> placeholder 提示文本<br> autofocus 必须填写<br> muautocomplete 输入信息成功后 记录输入过的信息 默认开启</p>
+        <input type="search" name="search" id="" placeholder="请输入内容" autofocus mu autocomplete="off">
+
+        <p> multiple 多选文件</p>
+        <input type="file" name="" id="" multiple>
+        <input type="submit" value="提交" onclick="getOk()">
+    </form>
+    <script>
+        function getOk() {
+            alert('填写成功')
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 在一行显示 顶对齐 父元素的宽度不够的时候 会另外起一行 掉下来/ */
+            float: left;
+            width: 200px;
+            height: 200px;
+            /* background-color: rgb(255, 124, 2); */
+            animation: ab 5s linear infinite;
+        }
+
+        .two1 {
+            position: absolute;
+            top: 62%;
+            right: 30px;
+            /* background-color: rgb(90, 255, 75); */
+
+        }
+
+        .four {
+            /* background-color: rgb(216, 197, 33); */
+        }
+
+        .one {
+            float: left;
+            height: 100px;
+            width: 100px;
+            border-radius: 5px 80px 5px 80px;
+            background-color: rgb(199, 24, 24);
+            box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .5);
+
+        }
+
+        @keyframes ab {
+            /* 0% {
+                transform: rotate(360deg);
+            }
+
+            25% {
+                transform: rotate(720deg);
+            }
+
+            50% {
+                transform: rotate(1080deg);
+            } */
+
+            100% {
+                transform: rotate(1440deg);
+            }
+
+        }
+
+        .two {
+            float: left;
+            height: 100px;
+            width: 100px;
+            border-radius: 80px 10px 80px 10px;
+            background-color: rgb(127, 218, 24);
+            box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="one"></div>
+    </div>
+    <div class="two1">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="one"></div>
+    </div>
+    <div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="one"></div>
+    </div>
+    <div class="four">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="one"></div>
+    </div>
+</body>
+
+</html>

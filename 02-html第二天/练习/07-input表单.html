@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        height: 20px;
+        background-color: rgba(170, 184, 176, 0.513);
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    input {
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <!-- action 收集的用户信息提交给那个文件 -->
+    <form action="XXX.PHP">
+        <table align="center" cellspacing="0" cellpadding="3">
+            <caption>
+                <h4>青春不常在,抓紧谈恋爱!!!</h4>
+            </caption>
+            <tr>
+                <td> <label for="user">用户名:</label> </td>
+                <td>
+                    <!-- 文本 -->
+                    <input type="text" name="username" value="用户名" id="user">
+                </td>
+            </tr>
+            <tr>
+                <!-- 密码 -->
+                <td><label for="pw">密码:</label></td>
+                <td><input type="password" name="pwd" id="pw"></td>
+            </tr>
+            <tr>
+                <td>性别:</td>
+                <td>
+                    <!-- 单选按钮 -->
+                    <label for="man"><input type="radio" name="sex" value="男" id="man" checked="checked">男</label>
+                    <label for="nv"><input type="radio" name="sex" value="女" id="nv">女</label>
+                    <label for="bn"><input type="radio" name="sex" value="人妖" id="bn">人妖</label>
+                </td>
+            </tr>
+            <tr>
+                <!-- 多选按钮 -->
+                <td>爱好:</td>
+                <td>
+                    <label for="ea"><input type="checkbox" name="hobby" id="ea" checked="checked">吃饭</label>
+                    <label for="se"><input type="checkbox" name="hobby" id="se" checked="checked">睡觉</label>
+                    <label for="da"><input type="checkbox" name="hobby" id="da" checked="checked">打豆豆</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone">绑定手机号:</label></td>
+                <td><input type="text" id="phone"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <input type="button" value="点击获取验证码"></td>
+            </tr>
+            <!-- 邮箱 -->
+            <td><label for="mail">绑定邮箱号:</label></td>
+            <td><input type="email" id="mail"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <input type="button" value="点击验证邮箱"></td>
+            </tr>
+            <tr>
+                <td>
+                    籍贯:
+                </td>
+                <td>
+                    <!-- 下拉表单 -->
+                    <select name="" id="">
+                        <option value="">---请选择地区---</option>
+                        <option value="">河南</option>
+                        <option value="">河北</option>
+                        <option value="" selected="selected">火星</option>
+                        <option value="">水星</option>
+                        <option value="">水星</option>
+                        <option value="">水星</option>
+                        <option value="">水星</option>
+                        <option value="">水星</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <!-- 上传文件 -->
+                <td><label for="fi">上传头像:</label></td>
+                <td><input type="file" name="文件" id="fi"></td>
+            </tr>
+            <tr>
+                <td>个人介绍:</td>
+                <td>
+                    <textarea name="个人介绍" id="" cols="20" rows="2">身高.体重...</textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <!-- 提交按钮 -->
+                <td><input type="submit" value="立即登录">
+                    <!-- 重置按钮 -->
+                    <input type="reset" value="重新填写">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+
+
+
+
+
+
+
+
+</html>

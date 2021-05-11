@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            /* css3新增盒子模型属性 内边距和边框不会撑大盒子 盒子的最终大小就是width的宽度 */
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(6, 178, 184);
+            border: 20px solid rgb(51, 189, 9);
+            padding: 15px;
+            margin: 20px auto;
+            /* 默认的盒子模型 边框和内边距会撑大盒子 */
+            box-sizing: content-box;
+        }
+
+        p {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(166, 184, 6);
+            border: 20px solid rgb(9, 177, 189);
+            padding: 15px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <p></p>
+</body>
+
+</html>

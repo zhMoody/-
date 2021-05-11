@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #64646e;
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #676767;
+}
+a:hover {
+    color: #db5b68;
+}
+input {
+    border: 1px solid #ccc;
+    outline: none;
+}
+button {
+    border: none;
+    outline: none;
+}
+.clearfix:before,.clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}

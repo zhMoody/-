@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box a,
+        .box1 a,
+        span a,
+        em {
+            width: 400px;
+            height: 400px;
+            font-size: 30px;
+            line-height: 400px;
+            text-align: center;
+            border: 1px solid #000;
+            display: block;
+            margin: 10px auto;
+            border-radius: 50px;
+            transition: all 1s;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .box a:hover {
+            border: 1px solid orange;
+            background-color: orange;
+        }
+
+        span a:hover {
+            border: 1px solid rgb(38, 195, 216);
+            background-color: rgb(38, 195, 216);
+        }
+
+        .box1 a:hover {
+            border: 1px solid blueviolet;
+            background-color: blueviolet;
+        }
+
+        .box a:active {
+            border-radius: 50%;
+            border: 1px solid aqua;
+            background-color: aqua;
+        }
+
+        .box1 a:active {
+            border-radius: 50%;
+            border: 1px solid rgb(43, 226, 73);
+            background-color: rgb(43, 226, 73);
+        }
+
+        span a:active {
+            border-radius: 50%;
+            border: 1px solid rgb(0, 255, 157);
+            background-color: rgb(0, 255, 157);
+        }
+
+        em:hover {
+            border: 1px solid rgb(0, 153, 255);
+            background-color: rgb(0, 153, 255);
+        }
+
+        em:active {
+            border-radius: 50%;
+            border: 1px solid rgb(9, 255, 0);
+            background-color: rgb(9, 255, 0);
+        }
+
+        .box3 a {
+            display: inline;
+            background-color: skyblue;
+            font-size: 50px;
+        }
+
+        em {
+            font-size: 25px;
+            font-style: normal;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box3"><a href="">我是div我要转换成行内元素</a></div>
+    <div class="box"><a href="#">第一个盒子</a></div>
+    <div class="box1"><a href="#">第二个盒子</a></div>
+
+    <span><a href="#">我是行内元素要转换成块元素</a></span>
+    <em>我是行内元素 我要改成行内快元素</em>
+</body>
+
+</html>

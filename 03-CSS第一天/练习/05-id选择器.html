@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- id选择器只能调用一次 可同时搭配类选择器使用 -->
+    <!-- 类选择器能调用无数次 -->
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            margin: 25px auto;
+        }
+
+        #nav,
+        #aaa {
+            background-color: orange;
+        }
+
+        #pink {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">你好</div>
+    <div id="pink">我不好</div>
+    <div class="pink" id="aaa">哈哈哈哈</div>
+</body>
+
+</html>

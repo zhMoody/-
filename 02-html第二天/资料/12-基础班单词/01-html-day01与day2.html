@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>基础班html单词</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <script src="js/render.js"></script>
+    <script src="js/html_day02.js"></script>
+  </head>
+  <body>
+    <div class="nav">
+      <h1>前端基础</h1>
+      
+    </div>
+    <div class="container clearfix">
+      <div class="fl-l">
+        <h3>HTML_day01</h3>
+        <table id="html_day01">
+          <tr>
+            <th>名称</th>
+            <th>音标</th>
+            <th>单双标签</th>
+            <th>含义</th>
+            <th>备注</th>
+          </tr>
+        </table>
+
+        <div class="btn clearfix">
+          <ul class="fl-r">
+            <li class="gray">
+              <a href="javascript:;">&lt; 上一页</a>
+            </li>
+            <li>
+              <a href="javascript:;">下一页 &gt;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="fl-r">
+        <h3>HTML_day02</h3>
+        <table id="html_day02">
+          <tr>
+            <th>名称</th>
+            <th>音标</th>
+            <th>单双标签</th>
+            <th>含义</th>
+            <th>备注</th>
+          </tr>
+        </table>
+
+        <div class="btn clearfix">
+          <ul class="fl-r">
+            <li class="gray">
+              <a href="javascript:;">&lt; 上一页</a>
+            </li>
+            <li>
+              <a href="javascript:;">下一页 &gt;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      new Render({
+        id: 'html_day01',
+        arg: html_day01,
+      })
+      new Render({
+        id: 'html_day02',
+        arg: html_day02,
+      })
+    </script>
+  </body>
+</html>

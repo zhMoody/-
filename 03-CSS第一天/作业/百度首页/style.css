@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(70, 69, 172);
+}
+
+.w {
+  text-align: center;
+}
+
+.b a {
+  color: #000;
+}
+
+.box {
+  width: 1000px;
+  height: 770px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -400px;
+  margin-left: -500px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.search {
+  margin-left: 81px;
+  margin-top: 10px;
+}
+
+.search input {
+  width: 420px;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background: url(./camera_01.png) no-repeat 395px center;
+}
+
+.search input:focus {
+  border: 1px solid #fff;
+  outline: 1px solid #bdcce3;
+  background: url(./camera_02.png) no-repeat 395px center;
+}
+
+button {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button a {
+  color: #000;
+}
+
+button:focus {
+  box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  margin-top: 30px;
+}
+
+.base {
+  margin-top: 60px;
+}
+
+.map {
+  margin-top: 40px;
+}
+
+.foot {
+  margin-top: 5px;
+}
+
+p {
+  font-size: 12px;
+  color: rgb(107, 104, 104);
+}

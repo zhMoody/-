@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            width: 600px;
+            height: 50px;
+            margin: 100px auto;
+        }
+
+        li {
+            list-style: none;
+            width: 100px;
+            height: 50px;
+            float: left;
+            transform-style: preserve-3d;
+            transition: 1s;
+            position: relative;
+        }
+
+        li:hover {
+            transform: rotateX(-90deg);
+        }
+
+        a {
+            text-decoration: none;
+            float: left;
+            width: 100px;
+            height: 50px;
+            color: #000;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        li a:nth-child(1) {
+            background-color: rgb(2, 246, 226);
+            transform: translateZ(25px);
+        }
+
+        li a:nth-child(2) {
+            background-color: rgb(123, 194, 8);
+            transform: rotateX(90deg) translateZ(25px);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="#">传智播客</a>
+            <a href="#">web前端</a>
+        </li>
+        <li>
+            <a href="#">传智播客</a>
+            <a href="#">web前端</a>
+        </li>
+        <li>
+            <a href="#">传智播客</a>
+            <a href="#">web前端</a>
+        </li>
+        <li>
+            <a href="#">传智播客</a>
+            <a href="#">web前端</a>
+        </li>
+        <li>
+            <a href="#">传智播客</a>
+            <a href="#">web前端</a>
+        </li>
+        <li>
+            <a href="#">传智播客</a>
+            <a href="#">web前端</a>
+        </li>
+    </ul>
+</body>
+<script>
+</script>
+
+</html>

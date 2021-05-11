@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: absolute;
+            top: 0;
+            left: 30px;
+            width: 400px;
+            height: 400px;
+            transition: all 3s;
+        }
+
+        .xiongda:hover,
+        .xionger:hover,
+        .guang:hover {
+            transform: translateY(75%);
+            /* 提升层级 */
+            z-index: 1;
+        }
+
+        .xiongda {
+            left: 60px;
+            background-color: rgb(160, 46, 46);
+        }
+
+        .xionger {
+            left: 120px;
+            background-color: rgb(44, 149, 18);
+        }
+
+        .guang {
+            left: 180px;
+            background-color: rgb(45, 123, 175);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box xiongda">熊大 </div>
+    <div class="box xionger">熊二</div>
+    <div class="box guang">光头强</div>
+</body>
+
+</html>

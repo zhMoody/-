@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            font-size: 3em;
+        }
+
+        /* 通过标签的属性来选择 必须是input标签,同时具有value属性 [属性] */
+        /* input[value] {
+            color: rgb(14, 168, 0);
+        } */
+
+        input[type=text] {
+            width: 660px;
+            height: 60px;
+            cursor: pointer;
+            font-size: 3em;
+            color: rgb(255, 208, 0);
+        }
+
+        /* 通过完整 属性=值 来选择元素 */
+        input[type=password] {
+            color: aqua;
+            width: 660px;
+            height: 60px;
+            cursor: pointer;
+            font-size: 3em;
+        }
+
+        /* 选择以icon 开头的 */
+        div[class^=icon] {
+            color: rgb(5, 103, 148);
+        }
+
+        /* 选择以data结尾的 */
+        section[class$=data] {
+            color: aqua;
+        }
+
+        /* 选择包含dd的 */
+        section[class*=dd] {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- 通过标签的属性来选择 必须是input标签,同时具有value属性 [属性] -->
+        <!-- <input type="text" value="aaaa" id=""> -->
+        <!-- 通过完整 属性=值 来选择元素 -->
+        <input type="text" name="" id="">
+        <input type="password" name="" id="">
+        <!-- 属性选择器 可以选择属性开头的某些元素 -->
+        <div class="icon1">小图标1</div>
+        <div class="icon2">小图标2</div>
+        <div class="icon3">小图标3</div>
+        <div class="icon4">小图标4</div>
+        <div>我不是 我没有 你别瞎选</div>
+        <!-- 属性选择器 可以选择属性结尾的某些元素 -->
+        <section class="icon-data">我要青色</section>
+        <section class="icon-data">我也要青色</section>
+        <section class="icon-data">我也要青色</section>
+        <section class="icon-ico">我啥都不要 别选我</section>
+        <!-- 属性选择器 可以选择属性包含 dd 的某些元素 -->
+        <section class="icn-ddaa">我要搞黄色</section>
+        <section class="ion-ddat">我也要搞黄色</section>
+        <section class="ico-ddta">我也要搞黄色</section>
+        <section class="con-ico">我是纯洁的</section>
+    </div>
+
+
+
+
+</body>
+
+</html>

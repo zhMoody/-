@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* nth-child() 选择所有子元素的第几个！！！！！ */
+        section span:nth-child(3) {
+            font-size: 60px;
+            color: yellow;
+        }
+
+        /* 区别！！！！ */
+
+
+        /* nth-of-type() 选择同类型下的第几个子元素！！！！！！！！！ */
+        section div:nth-of-type(2) {
+            font-size: 5em;
+            color: rgb(2, 238, 14);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p>熊大</p>
+        <div>熊二</div>
+        <span>么么哒</span>
+        <div>光头强</div>
+    </section>
+    <form action="">
+        <input type="number" name="" id="num">
+        <input type="button" value="点击" onclick="getName(num)">
+    </form>
+
+</body>
+
+</html>

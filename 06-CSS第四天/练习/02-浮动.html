@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .left,
+        .right {
+            float: left;
+            width: 200px;
+            height: 200px;
+            /* background-color: orange; */
+            transition: all 10s;
+            margin: 50px 50px;
+            animation: ab 5s linear infinite;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .one {
+            float: left;
+            height: 100px;
+            width: 100px;
+            border-radius: 5px 80px 5px 80px;
+            background-color: rgb(185, 127, 127);
+            box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .5);
+
+        }
+
+        @keyframes ab {
+            100% {
+                transform: rotate(1440deg);
+            }
+
+        }
+
+        .two {
+            float: left;
+            height: 100px;
+            width: 100px;
+            border-radius: 80px 10px 80px 10px;
+            background-color: rgb(184, 128, 128);
+            box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .5);
+        }
+
+        .left:hover,
+        .right:hover {
+            transform: rotate(1440deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="one"></div>
+    </div>
+    <div class="right">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="one"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?nkq9zy');
+            src: url('fonts/icomoon.eot?nkq9zy#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?nkq9zy') format('truetype'),
+                url('fonts/icomoon.woff?nkq9zy') format('woff'),
+                url('fonts/icomoon.svg?nkq9zy#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        .box1 {
+            width: 0;
+            height: 0;
+            border: 100px solid transparent;
+            border-right-color: red;
+            animation: aaa 10s infinite linear;
+        }
+
+        .jd {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            background-color: rgb(11, 165, 93);
+        }
+
+        .jd span {
+            position: absolute;
+            top: -40px;
+            left: 140px;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-bottom-color: rgb(11, 165, 93);
+        }
+
+        .mi {
+            font-family: 'icomoon';
+            color: rgb(24, 0, 102);
+            font-size: 20em;
+            margin: 0 auto;
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: rgb(255, 115, 0);
+        }
+
+        .mi span {
+
+
+            position: absolute;
+            top: 160px;
+            right: -80px;
+            width: 0;
+            height: 0;
+            border: 40px solid transparent;
+            border-left-color: rgb(255, 115, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="jd">
+        <span></span>
+    </div>
+    <div class="mi">
+        
+        <span></span>
+    </div>
+</body>
+
+</html>

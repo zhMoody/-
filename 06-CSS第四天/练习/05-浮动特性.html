@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 任何元素都可以浮动,不管原先是什么模式的元素.添加浮动后具有行内块元素相似的特性 */
+        span {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(211, 22, 22);
+        }
+
+        /* 如果行内元素有了浮动 则不需要转换快\行内块元素就可以直接给高度和宽度 */
+        p {
+            float: right;
+            height: 200px;
+            background-color: rgb(251, 9, 231);
+        }
+    </style>
+</head>
+
+<body>
+    <span>1</span>
+    <span>2</span>
+    <p>gsf sf s sf s sf </p>
+</body>
+
+</html>

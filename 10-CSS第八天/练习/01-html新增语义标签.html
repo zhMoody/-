@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,
+        nav,
+        section,
+        footer {
+            width: 1200px;
+            height: 100px;
+            background-color: rgb(214, 30, 30);
+            line-height: 100px;
+            text-align: center;
+            border-radius: 15px;
+            margin: 10px auto;
+            font-size: 4em;
+        }
+
+        section {
+            width: 500px;
+            height: 500px;
+            background-color: rgb(32, 93, 14);
+        }
+
+        button {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(177, 39, 39);
+        }
+    </style>
+</head>
+
+<body>
+    <header>头部标签</header>
+    <nav>导航栏标签</nav>
+    <section>某个区域</section>
+    <footer>底部标签</footer>
+    <input type="button" name="" value="点击我" onclick="getName()">
+
+    <script>
+        function getName() {
+            var name = prompt('请输入你的名字:');
+            return alert(`欢迎${name}`)
+        }
+
+    </script>
+</body>
+
+</html>

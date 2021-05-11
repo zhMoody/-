@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(8, 170, 148);
+        }
+
+        div {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+
+        }
+
+        div ul {
+            position: absolute;
+            top: 25%;
+            margin-top: -50px;
+        }
+
+        div ul li {
+            display: inline-block;
+            list-style: none;
+            height: 200px;
+            width: 50px;
+            margin: 0 30px;
+            text-align: center;
+            background-color: rgb(8, 170, 148);
+            box-shadow: 0 0px 0px 0px rgba(0, 0, 0, .5);
+            border-radius: 20px;
+            animation: aaa 1.4s infinite linear;
+        }
+
+
+        @keyframes aaa {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, .0);
+                opacity: 0;
+                transform: translateX(-50px) scale(1);
+            }
+
+            50% {
+                background-color: rgb(141, 156, 3);
+                box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+                opacity: 1.2;
+                transform: translateX(0px) scale(1.2);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, .0);
+                opacity: 0;
+                transform: translateX(50px) scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

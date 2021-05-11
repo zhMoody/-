@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li 的权重是 0.0.0.1 */
+        li {
+            color: coral;
+        }
+
+        /* ul li 的权重是 0.0.0.1 + 0.0.0.1 = 0.0.0.2 */
+        ul li {
+            color: blue;
+        }
+
+        /* .box li 的权重是 0.0.1.0 + 0.0.0.1 =0.0.1.1 */
+        .box li {
+            color: rgb(149, 65, 65);
+        }
+
+        /* #box1 li 的权重是 0.1.0.0 + 0.0.0.1 = 0.1.0.1 */
+        #box1 li {
+            color: cornflowerblue;
+        }
+
+        /* .box .one 的权重是 0.0.1.0 + 0.0.1.0 = 0.0.2.0 */
+        .box .one {
+            width: 300px;
+            height: 40px;
+            background-color: #ccc;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 30px;
+            line-height: 40px;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="color: burlywood;">
+        <ul class="box" id="box1">
+            <li class="one">*和 继承样式 0.0.0.0</li>
+            <li>标签选择器 0.0.0.1</li>
+            <li>类选择器 0.0.1.0</li>
+            <li>id 选择器 0.1.0.0</li>
+            <li>行内样式 1.0.0.0</li>
+            <li>!important 无穷大</li>
+        </ul>
+    </div>
+</body>
+
+</html>

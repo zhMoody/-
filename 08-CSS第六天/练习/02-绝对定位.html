@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yeye {
+
+
+            width: 800px;
+            height: 800px;
+            background-color: rgb(121, 116, 116);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .yeye:hover,
+        .father:hover {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .father {
+
+            width: 500px;
+            height: 500px;
+            background-color: rgb(151, 83, 83);
+            text-align: center;
+        }
+
+        .son {
+            position: absolute;
+            bottom: 0;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(114, 194, 100);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yeye">
+        相对定位 最外层加入
+        <div class="father">
+            相对定位 最第二层加入
+            <div class="son"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tb-promo {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            background-color: rgb(207, 98, 98);
+            margin: 100px auto;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .tb-promo img {
+            width: 100%;
+        }
+
+        .prev a,
+        .next a {
+            position: absolute;
+            width: 20px;
+            height: 30px;
+            text-align: center;
+            line-height: 26px;
+            text-decoration: none;
+            color: #fff;
+            background-color: rgba(0, 0, 0, .3)
+        }
+
+        .prev a {
+            top: 50%;
+            left: 0;
+            margin-top: -15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .next a {
+            top: 50%;
+            right: 0;
+            margin-top: -15px;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .promo-nav ul {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            margin-left: -33px;
+            margin-bottom: 10px;
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, .5);
+
+        }
+
+
+        .promo-nav ul li {
+            float: left;
+            margin: 5px 4px;
+        }
+
+        .promo-nav ul li {
+            display: block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            animation: aaa 1s infinite linear;
+        }
+
+        .promo-nav ul :nth-child(1) li {
+            animation-delay: 1s;
+        }
+
+        .promo-nav ul :nth-child(2) li {
+            animation-delay: 2s;
+        }
+
+        .promo-nav ul :nth-child(3) li {
+            animation-delay: 3s;
+        }
+
+        .promo-nav ul :nth-child(4) li {
+            animation-delay: 4s;
+        }
+
+        .promo-nav ul :nth-child(5) li {
+            animation-delay: 5s;
+        }
+
+        @keyframes aaa {
+            0% {
+                background-color: rgb(158, 27, 27);
+            }
+
+            20% {
+                background-color: rgb(175, 106, 106);
+            }
+
+            40% {
+                background-color: rgb(14, 106, 143);
+            }
+
+            60% {
+                background-color: rgb(210, 231, 18);
+            }
+
+            80% {
+                background-color: rgb(99, 27, 158);
+            }
+
+            100% {
+                background-color: rgb(88, 206, 33);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo">
+        <img src="./images/tb.jpg   " alt="">
+        <div class="prev"><a href="#">&lt;</a></div>
+        <div class="next"><a href="#">&gt;</a></div>
+        <div class="promo-nav">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

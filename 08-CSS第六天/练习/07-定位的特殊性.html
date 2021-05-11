@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            position: absolute;
+            top: 300px;
+            width: 200px;
+            height: 100px;
+            background-color: rgb(144, 36, 36);
+        }
+
+        /* 脱标元素的特点 (浮动 绝对定位 固定定位)
+        1.行内元素可以设置宽高
+        2. 块元素加了定位 宽度不在默认父元素的宽度而是由内容撑开盒子 */
+        div {
+            position: absolute;
+            background-color: rgb(143, 23, 23);
+        }
+    </style>
+</head>
+
+<body>
+    <span>123</span>
+    <div>内容</div>
+</body>
+
+</html>

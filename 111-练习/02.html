@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #one {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: fixed;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+        }
+
+        #two,
+        #three {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(11, 241, 229);
+            position: fixed;
+            border-radius: 50%;
+            right: 10px;
+            top: 10px;
+        }
+
+        #three {
+            background-color: rgb(8, 105, 100);
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <script>
+        var x = 0;
+        var y = 0;
+        var xs = 10;
+        var ys = 10;
+        var left = document.body.clientWidth;
+        var right = document.body.clientWidth;
+        var one = document.getElementById("one");
+        var two = document.getElementById("two");
+        var three = document.getElementById("three");
+        function move() {
+            x += xs;
+            y += ys;
+            if (x >= document.body.clientWidth - one.offsetWidth - 20 || x < 0) {
+                xs = -1 * xs;
+            }
+            if (y >= document.body.clientHeight - one.offsetHeight - 20 || y < 0) {
+                ys = -1 * ys;
+            }
+
+            one.style.left = x + "px";
+            one.style.top = y + "px";
+        }
+        var dt = setInterval("move()", 100);
+        one.onmouseover = function () {
+            clearInterval(dt)
+        }
+        one.onmouseout = function () {
+            dt = setInterval("move()", 100);
+        }
+
+        //跑马灯
+        function leftMove() {
+            if (left <= 100) {
+                left = document.body.clientWidth;
+            }
+            left = left - 100;
+            two.style.left = left + "px";
+        }
+        var dl = setInterval("leftMove()", 100);
+        two.onmouseover = function () {
+            clearInterval(dl);
+        }
+        two.onmouseout = function () {
+            dl = setInterval("leftMove()", 100);
+        }
+
+
+        function rightMove() {
+            if (right <= 100) {
+                right = document.body.clientWidth;
+            }
+            right = right - 100;
+            three.style.right = right + "px";
+        }
+        var dr = setInterval('rightMove()', 100);
+        three.onmouseover = function () {
+            clearInterval(dr);
+        }
+        three.onmouseout = function () {
+            dr = setInterval('rightMove()', 100);
+        }
+    </script>
+</body>
+
+</html>

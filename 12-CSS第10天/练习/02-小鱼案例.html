@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 174px;
+            height: 126px;
+            background: url(./images/fish-12-126.png);
+            animation: aa 1s steps(12) infinite, bb 10s infinite;
+        }
+
+        @keyframes aa {
+            form {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 0 -1512px;
+            }
+        }
+
+        @keyframes bb {
+            0% {
+                transform: translateX(0) rotate(0);
+            }
+
+            25% {
+                transform: translateX(1500px) rotate(0);
+            }
+
+            50% {
+                transform: translateX(1500px) rotate(180deg);
+            }
+
+            75% {
+                transform: translateX(0px) rotate(180deg);
+            }
+
+            100% {
+                transform: translateX(0px) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

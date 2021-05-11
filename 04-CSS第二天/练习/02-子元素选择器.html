@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 子代选择器选择的是父元素的亲儿子 */
+        /* 1.父元素在前,子元素在后,用>连在一起 */
+        .nav>a {
+            color: red;
+            font-size: 50px;
+        }
+
+        .nav p>a {
+            color: orange;
+            font-size: 50px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="">儿子</a>
+        <p>
+            <a href="">第一个孙子</a>
+            <span><a href="">孙子</a></span>
+            <span><a href="">孙子</a></span>
+            <span><a href="">孙子</a></span>
+            <span><a href="">孙子</a></span>
+            <span><a href="">孙子</a></span>
+        </p>
+    </div>
+</body>
+
+
+</html>

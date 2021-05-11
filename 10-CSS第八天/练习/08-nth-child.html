@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* even 选择所有的偶数孩子 */
+        ul li:nth-child(even) {
+            background-color: rgb(223, 13, 13);
+        }
+
+        /* even 选择所有的奇数孩子 */
+        ul li:nth-child(odd) {
+            background-color: rgb(167, 223, 13);
+        }
+
+        /* n 从 0 开始！！！！！！！！！！！！！ */
+        /* nth-child(n) 选择所有的子元素 */
+        /* ol li:nth-child(n) {
+            background-color: rgb(6, 222, 238);
+        } */
+        /* nth-child(2n) 选择所有的偶数子元素 */
+        ol li:nth-child(2n) {
+            background-color: rgb(6, 222, 238);
+        }
+
+        /* nth-child(2n+1) 选择所有的奇数子元素 */
+        ol li:nth-child(2n+1) {
+            background-color: rgb(33, 238, 6);
+        }
+
+        /* nth-child(n+3) 选择从第三个开始的后面所有子元素 */
+        /* ol li:nth-child(n+3) {
+            background-color: rgb(33, 238, 6);
+        } */
+        /* nth-child(-n+3) 选择前三个子元素 */
+        /* ol li:nth-child(-n+3) {
+            background-color: rgb(33, 238, 6);
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- n 从0开始！！！！！ -->
+    <ul>
+        <li>第1个孩子</li>
+        <li>第2个孩子</li>
+        <li>第3个孩子</li>
+        <li>第4个孩子</li>
+        <li>第5个孩子</li>
+        <li>第6个孩子</li>
+        <li>第7个孩子</li>
+        <li>第8个孩子</li>
+    </ul>
+    <!-- n 从0开始！！！！！ -->
+    <ol>
+        <li>第1个孩子</li>
+        <li>第2个孩子</li>
+        <li>第3个孩子</li>
+        <li>第4个孩子</li>
+        <li>第5个孩子</li>
+        <li>第6个孩子</li>
+        <li>第7个孩子</li>
+        <li>第8个孩子</li>
+    </ol>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            width: 49px;
+            height: 49px;
+            background-color: rgb(255, 103, 0);
+            margin: 20px auto;
+            border-radius: 15px;
+        }
+
+        a {
+            display: inline-block;
+            width: 100px;
+            height: 49px;
+            font-size: 0;
+            margin-left: -49px;
+            transition: all .3s;
+        }
+
+        .logo:hover a {
+            margin-left: 0;
+        }
+
+        .logo a img:last-child {
+            opacity: 1;
+            transition: all .3s;
+        }
+
+        .logo:hover a img:last-child {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="#">
+            <img src="./images/mi-home.png" alt="">
+            <img src="./images/mi-logo.png" alt="">
+        </a>
+    </div>
+</body>
+
+</html>

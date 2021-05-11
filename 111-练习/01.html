@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        var arr = [65, 48, 48, 65165, 4848, 5148, 158, 454, 8481, 841284, 84, 18, 1848, 1484, 148, 484, 4, 84, 84, 84, 84, 84, 481, 851, 684, 6, 84, 684, 6, 4, 64, 68, 4, 684, 684, 86, 4186]
+        for (var i = 0; i <= arr.length - 1; i++) {
+            for (var j = 0; j <= arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    var temp = arr[j]
+                    arr[j] = arr[j + 1]
+                    arr[j + 1] = temp
+                }
+            }
+        }
+        document.write(arr)
+    </script>
+</body>
+
+</html>

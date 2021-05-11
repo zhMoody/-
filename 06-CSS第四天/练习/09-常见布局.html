@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .top {
+            height: 50px;
+            background-color: #ccc;
+        }
+
+        .banner {
+            width: 980px;
+            height: 150px;
+            background-color: #ccc;
+            margin: 10px auto;
+        }
+
+        .box {
+            width: 980px;
+
+            margin: 10px auto;
+        }
+
+        .box li {
+            float: left;
+            width: 237px;
+            height: 300px;
+            background-color: #ccc;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: all .3s;
+        }
+
+        .box li:hover {
+            box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, .4);
+        }
+
+        .box .last {
+            margin-right: 0;
+        }
+
+        .footer {
+            height: 150px;
+            background-color: #ccc;
+        }
+
+        .lefte,
+        .righte {
+            float: left;
+            width: 200px;
+            height: 600px;
+            background-color: #ccc;
+        }
+
+        .righte {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">Top</div>
+    <div class="banner">Banner</div>
+    <div class="lefte">左青龙</div>
+    <div class="righte">右白虎</div>
+    <div class="box clearfix">
+        <ul>
+            <li>Box1</li>
+            <li>Box2</li>
+            <li>Box3</li>
+            <li class="last">Box3</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li class="last">Box4</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li class="last">Box4</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li class="last">Box4</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li class="last">Box4</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li class="last">Box4</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li class="last">Box4</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li class="last">Box4</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li class="last">Box4</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li class="last">Box4</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li>Box3</li>
+            <li class="last">Box4</li>
+        </ul>
+    </div>
+
+
+
+    <div class="footer">Footer</div>
+</body>
+
+</html>

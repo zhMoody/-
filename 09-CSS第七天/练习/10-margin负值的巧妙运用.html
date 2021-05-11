@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 600px;
+            border: 1px solid red;
+            list-style: none;
+            margin-left: -1px;
+            animation: aaa 1s infinite linear;
+            font-size: 7em;
+            text-align: center;
+            line-height: 600px;
+        }
+
+        /* ul li:hover {
+            使用相对定位来提高盒子 使其压住所有的盒子
+            position: relative;
+            border: 1px solid aqua;
+        } */
+        ul li:hover {
+            /* 提高盒子的层级 */
+            z-index: 1;
+            border: 1px solid aqua
+        }
+
+        @keyframes aaa {
+            0% {
+                border: 1px solid rgb(10, 110, 110)
+            }
+
+            25% {
+                border: 1px solid rgb(30, 255, 0)
+            }
+
+            50% {
+                border: 1px solid rgb(255, 238, 0)
+            }
+
+            75% {
+                border: 1px solid rgb(255, 38, 0)
+            }
+
+            100% {
+                border: 1px solid rgb(255, 0, 170)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>

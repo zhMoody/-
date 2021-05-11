@@ -1,0 +1,97 @@
+/* 这个css文件是用来实现初始化效果的css文件 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 去掉ul ol的小圆点 */
+  ul,
+  ol {
+    list-style-type: none;
+  }
+  
+ 
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #c81623;
+  }
+  
+  /* 去掉input对应的2像素的边框 */
+  input {
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  button {
+    /* 去掉边框 */
+    border: none;
+    /* 去掉选中后的蓝色边框 */
+    outline: none;
+    /* 将鼠标换成小手 */
+    cursor: pointer;
+  }
+  
+  /* 清除浮动公共类 */
+  .clearfix:before,
+  .clearfix:after {
+    content: '';
+    display: table;
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  textarea {
+    /* 去掉textarea的自动缩放 */
+    resize: none;
+  }
+  
+  /* 设置当前网页的字体大小 */
+ 
+  
+  .w {
+    width: 850px;
+    margin: 0 auto;
+  }
+  
+  .fl {
+    float: left;
+  }
+  
+  .fr {
+    float: right;
+  }
+  
+  .ml-5 {
+    margin-left: 5px;
+  }
+  
+  .ml-10 {
+    margin-left: 10px;
+  }
+  
+  .mr-5 {
+    margin-right: 5px;
+  }
+  
+  .mr-10 {
+    margin-right: 10px;
+  }
+  
+  .main-color {
+    color: #c81623;
+  }
+  
+  /* 单行文本溢出以省略号的形式显示 */
+  .txt-cut {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
